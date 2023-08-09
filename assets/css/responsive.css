@@ -1,0 +1,234 @@
+/* Header */
+@media (max-width: 1120px) {
+    .nav-list {
+        gap: 15px;
+    }
+
+    .nav-page {
+        font-size: 0.75rem;
+    }
+
+    .header-heading {
+        font-size: 2rem;
+    }
+
+    .header-subtext {
+        font-size: 1rem;
+    }
+
+    .header-btn {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .header {
+        margin-bottom: 130px;
+    }
+
+    .nav {
+        margin-bottom: 300px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+        grid-column: 3 / 4;
+        justify-self: end;
+    }
+
+    .header-heading {
+        font-size: 1.7rem;
+    }
+
+    .header-subtext {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .header-btn {
+        padding: 12px 28px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 890px) {
+    .header-heading {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .header-subtext {
+        font-size: 0.7rem;
+        margin-bottom: 15px;
+    }
+
+    .header-btn {
+        padding: 10px 30px;
+        font-size: 0.675rem;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-up {
+        text-align: center;
+    }
+
+    footer form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer form input:nth-child(3) {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .nav {
+        margin-bottom: 180px;
+    }
+
+    .header-heading {
+        font-size: 1.3rem;
+    }
+
+    .header-subtext {
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    .header-btn {
+        padding: 10px 15px;
+        font-size: 0.7rem;
+    }
+
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .teachers-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .images-list {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    .videos-list {
+        grid-template-columns: 1fr;
+    }
+
+    .students .container {
+        text-align: center;
+    }
+
+    .students-cards {
+        grid-template-columns: 1fr;
+        gap: 90px 20px;
+    }
+
+    .commit .container {
+        text-align: center;
+    }
+
+    .commit-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .container {
+        text-align: center;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item:first-child {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact-item:last-child {
+        flex-direction: column;
+    }
+
+    .footer-up {
+        text-align: center;
+    }
+
+    footer form {
+        grid-template-columns: 1fr;
+    }
+
+    footer form input:first-child,
+    footer form button:last-child {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer form input {
+        margin: auto;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .nav {
+        margin-bottom: 100px;
+    }
+
+    header {
+        margin-bottom: 70px;
+    }
+
+    .commit-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .videos-item {
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+}

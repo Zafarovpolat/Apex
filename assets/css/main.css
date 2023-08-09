@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    transition: all 500ms;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: #FDB44B;
+    letter-spacing: 0.28px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #00445B;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    margin-bottom: 30px;
+}
+
+main h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.28px;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Header */
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px;
+    margin-bottom: 150px;
+    background-image: linear-gradient(to right, #00445bbb, #00445bbb), url(./../media/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .container {
+    display: block;
+}
+
+.header-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-heading {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.86px;
+}
+
+.header-subtext {
+    margin-bottom: 60px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+
+.header-btn {
+    padding: 24px 48px;
+}
+
+
+/* Navbar */
+
+.nav {
+    margin-bottom: 140px;
+    display: grid;
+    grid-template-columns: 20% 10% 1fr;
+    align-items: center;
+}
+
+.nav-list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column: 3 / 4;
+    gap: 30px;
+}
+
+.nav-item {
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-page {
+    color: white;
+    font-size: 0.875rem;
+}
+
+
+.burger-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    width: auto;
+    padding: 0;
+    display: none;
+}
+
+/* News */
+
+.news-cards {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 60px;
+}
+
+.news-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    text-decoration: underline;
+}
+
+.news-text {
+    text-align: left;
+}
+
+.news-date {
+    color: #646464;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.navigation-list {
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+
+.navigation-item {
+    background-color: gray;
+    padding: 3px 30px;
+    display: inline-block;
+}
+
+.navigation-item:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #00445B;
+}
+
+
+/* Courses */
+
+.courses-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.courses-card {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-card:last-child {
+    margin-right: 0;
+}
+
+.courses-text {
+    width: 85%;
+    padding: 37px 0px;
+    text-align: left;
+    margin: auto;
+}
+
+.courses-title {
+    margin-bottom: 10px;
+}
+
+.courses-subtext {
+    margin-bottom: 30px;
+}
+
+.courses-text button {
+    width: 100%;
+    padding: 15px 0;
+}
+
+
+/* Teachers */
+
+.teachers-cards {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.teachers-card {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+}
+
+.teachers-text {
+    padding: 37px;
+}
+
+.teachers-title {
+    margin-bottom: 20px;
+}
+
+
+/* Images */
+
+.images .container {
+    text-align: center;
+}
+
+.images-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 25px;
+}
+
+
+/* Videos */
+
+.videos .container {
+    text-align: center;
+}
+
+.videos-list {
+    margin-bottom: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Students */
+
+.students-heading {
+    margin-bottom: 80px;
+}
+
+.students-cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.students-card {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.13);
+}
+
+.students-image {
+    width: 110px;
+    height: 110px;
+    transform: translateY(-55px);
+}
+
+.students-text {
+    text-align: left;
+    padding: 0 38px 37px 38px;
+}
+
+
+/* Commit */
+
+.commit-cards {
+    margin-bottom: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.commit-card {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+}
+
+.commit-text {
+    margin: auto;
+    padding: 37px;
+    text-align: left;
+}
+
+.commit-info {
+    margin-bottom: 20px;
+    color: #646464;
+}
+
+.commit-subtext {
+    margin-bottom: 20px;
+}
+
+.commit-icons {
+    color: gold;
+}
+
+.commit-icon {
+    display: inline-block;
+}
+
+
+/* Contact */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact-map {
+    margin-bottom: 30px;
+    grid-column: 1 / 5;
+}
+
+.contact-list {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 45px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #00445B;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+}
+
+.contact-item a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.28px;
+    gap: 10px;
+}
+
+.contact-item:last-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-item:last-child ul {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #00445B;
+    padding: 50px 100px;
+}
+
+.footer-up {
+    margin-bottom: 50px;
+}
+
+.footer-heading {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    margin-bottom: 20px;
+}
+
+footer form {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+footer form input {
+    padding: 15px;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.footer-underline {
+    padding: 1px;
+    width: 300px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+input:focus {
+    outline: none;
+}
+
+footer form input:nth-child(1) {
+    width: 369px;
+}
+
+footer form input:nth-child(2),
+footer form input:nth-child(3) {
+    width: 269px;
+}
+
+footer form button {
+    padding: 15px 35px;
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-license {
+    align-self: end;
+    color: rgb(224, 224, 224);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: inline-block;
+}
